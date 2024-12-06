@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec50aa14-600d-4af7-a074-3e1a2465e0de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../examples/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/Constarray.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/Constdemo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/MutableVariabledatetypes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/Utility.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/Variabledatatypes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/arithmeticoperator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/assignmentoperator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/comparisonoperator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/explicitdeclarationex.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/logicaloperator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/nullabledemo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/src/rangeoperation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../examples/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/dowhileloop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/forloop.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/ifasanexpression.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/ifelsedemo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/ifelseladder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/loopcontrol.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/simpleif.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/whencase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/whenexpression.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examples/src/whileloop.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +61,23 @@
     "Kotlin.ComparisonoperatorKt.executor": "Run",
     "Kotlin.ConstarrayKt.executor": "Run",
     "Kotlin.ConstdemoKt.executor": "Run",
+    "Kotlin.DowhileloopKt.executor": "Run",
     "Kotlin.ExplicitdeclarationexKt.executor": "Run",
+    "Kotlin.ForloopKt.executor": "Run",
+    "Kotlin.IfasanexpressionKt.executor": "Run",
+    "Kotlin.IfelsedemoKt.executor": "Run",
+    "Kotlin.IfelseladderKt.executor": "Run",
     "Kotlin.LogicaloperatorKt.executor": "Run",
+    "Kotlin.LoopcontrolKt.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "Kotlin.MutableVariabledatetypesKt.executor": "Run",
     "Kotlin.NullabledemoKt.executor": "Run",
     "Kotlin.RangeoperationKt.executor": "Run",
+    "Kotlin.SimpleifKt.executor": "Run",
     "Kotlin.VariabledatatypesKt.executor": "Run",
+    "Kotlin.WhencaseKt.executor": "Run",
+    "Kotlin.WhenexpressionKt.executor": "Run",
+    "Kotlin.WhileloopKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -94,37 +94,37 @@
       <recent name="C:\Users\bhavi\Documents\bhratbook\Android-Kotlin-Examples\ch1\examples\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.RangeoperationKt">
-    <configuration name="ArithmeticoperatorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArithmeticoperatorKt" />
+  <component name="RunManager" selected="Kotlin.LoopcontrolKt">
+    <configuration name="DowhileloopKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DowhileloopKt" />
       <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssignmentoperatorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AssignmentoperatorKt" />
+    <configuration name="ForloopKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ForloopKt" />
       <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparisonoperatorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ComparisonoperatorKt" />
+    <configuration name="LoopcontrolKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LoopcontrolKt" />
       <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogicaloperatorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LogicaloperatorKt" />
+    <configuration name="WhenexpressionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WhenexpressionKt" />
       <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RangeoperationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RangeoperationKt" />
+    <configuration name="WhileloopKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WhileloopKt" />
       <module name="untitled" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.RangeoperationKt" />
-        <item itemvalue="Kotlin.AssignmentoperatorKt" />
-        <item itemvalue="Kotlin.LogicaloperatorKt" />
-        <item itemvalue="Kotlin.ComparisonoperatorKt" />
-        <item itemvalue="Kotlin.ArithmeticoperatorKt" />
+        <item itemvalue="Kotlin.LoopcontrolKt" />
+        <item itemvalue="Kotlin.DowhileloopKt" />
+        <item itemvalue="Kotlin.WhileloopKt" />
+        <item itemvalue="Kotlin.ForloopKt" />
+        <item itemvalue="Kotlin.WhenexpressionKt" />
       </list>
     </recent_temporary>
   </component>
