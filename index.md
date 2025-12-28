@@ -10,7 +10,7 @@
 <h2>📂 Chapters</h2>
 <ul>
   <li><a href="ch1/index.md">Chapter 1 – Kotlin Basics</a></li>
-  <li><a href="ch2/">Chapter 2 – Activities & Intents</a></li>
+  <li><a href="ch2/index.md">Chapter 2 – Activities & Intents</a></li>
   <li><a href="ch3/">Chapter 3 – RecyclerView</a></li>
 </ul>
 
