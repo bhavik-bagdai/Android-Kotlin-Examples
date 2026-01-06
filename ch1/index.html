@@ -1,862 +1,112 @@
-<!DOCTYPE html><!DOCTYPE html># Chapter 1: Kotlin Basics - Code Examples
-
-<html lang="en">
-
-<head><html>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><head>This directory contains Kotlin code examples covering fundamental concepts.
-
-  <title>Chapter 1: Kotlin Basics - Code Examples</title>
-
-  <style>  <meta charset="UTF-8">
-
-    * {
-
-      margin: 0;  <title>Chapter 1: Kotlin Basics - Code Examples</title>## 📚 Table of Contents
-
-      padding: 0;
-
-      box-sizing: border-box;  <style>
-
-    }
-
-        body {- [Getting Started](#getting-started)
-
-    body {
-
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;- [Variables and Data Types](#variables-and-data-types)
-
-      line-height: 1.6;
-
-      color: #333;      line-height: 1.6;- [Operators](#operators)
-
-      background: #f5f5f5;
-
-    }      max-width: 900px;- [Control Flow](#control-flow)
-
-    
-
-    .container {      margin: 0 auto;- [Loops](#loops)
-
-      max-width: 1000px;
-
-      margin: 0 auto;      padding: 20px;- [Utility Classes](#utility-classes)
-
-      background: white;
-
-      min-height: 100vh;      color: #24292e;
-
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-
-    }    }---
-
-    
-
-    header {    h1 { color: #0366d6; border-bottom: 2px solid #0366d6; padding-bottom: 10px; }
-
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
-      color: white;    h2 { color: #0366d6; border-bottom: 1px solid #eaecef; padding-bottom: 8px; margin-top: 24px; }## Getting Started
-
-      padding: 40px 30px;
-
-      border-bottom: 5px solid #5a67d8;    h3 { color: #6a737d; margin-top: 16px; }
-
-    }
-
-        a { color: #0366d6; text-decoration: none; }### Hello World
-
-    .back-link {
-
-      display: inline-block;    a:hover { text-decoration: underline; }- [helloworld.kt](helloworld.kt) - Your first Kotlin program
-
-      margin-bottom: 15px;
-
-      color: rgba(255,255,255,0.9);    ul { list-style-type: none; padding-left: 0; }- [Main.kt](Main.kt) - Main entry point with utility import
-
-      text-decoration: none;
-
-      font-size: 14px;    ul li { padding: 4px 0; }- [commandlineargs.kt](commandlineargs.kt) - Working with command-line arguments
-
-      transition: all 0.3s;
-
-    }    ul li:before { content: "→ "; color: #0366d6; font-weight: bold; }
-
-    
-
-    .back-link:hover {    code { background-color: #f6f8fa; padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', monospace; }---
-
-      color: white;
-
-      transform: translateX(-5px);    pre { background-color: #f6f8fa; padding: 16px; border-radius: 6px; overflow-x: auto; }
-
-    }
-
-        hr { border: 0; border-top: 1px solid #eaecef; margin: 24px 0; }## Variables and Data Types
-
-    h1 {
-
-      font-size: 2.5em;    .back-link { margin-bottom: 20px; }
-
-      margin-bottom: 10px;
-
-      font-weight: 700;  </style>### Immutable Variables (val)
-
-    }
-
-    </head>- [Variabledatatypes.kt](Variabledatatypes.kt) - Immutable variable declarations with different data types
-
-    .subtitle {
-
-      font-size: 1.1em;<body>- [explicitdeclarationex.kt](explicitdeclarationex.kt) - Explicit type declaration examples
-
-      opacity: 0.95;
-
-    }
-
-    
-
-    .content {<div class="back-link">### Mutable Variables (var)
-
-      padding: 40px 30px;
-
-    }  <a href="../">← Back to Main Index</a>- [MutableVariabledatetypes.kt](MutableVariabledatetypes.kt) - Mutable variable declarations and reassignment
-
-    
-
-    h2 {</div>
-
-      color: #667eea;
-
-      font-size: 1.8em;### Constants
-
-      margin: 40px 0 20px 0;
-
-      padding-bottom: 10px;<h1>Chapter 1: Kotlin Basics - Code Examples</h1>- [Constdemo.kt](Constdemo.kt) - Working with constants using `const`
-
-      border-bottom: 3px solid #e2e8f0;
-
-      display: flex;<p>This directory contains Kotlin code examples covering fundamental concepts.</p>- [Constarray.kt](Constarray.kt) - Constant arrays
-
-      align-items: center;
-
-      gap: 10px;
-
-    }
-
-    <h2>📚 Table of Contents</h2>### Nullable Types
-
-    h2:first-child {
-
-      margin-top: 0;<ul>- [nullabledemo.kt](nullabledemo.kt) - Nullable types and null safety
-
-    }
-
-      <li><a href="#getting-started">Getting Started</a></li>
-
-    h3 {
-
-      color: #4a5568;  <li><a href="#variables-and-data-types">Variables and Data Types</a></li>---
-
-      font-size: 1.3em;
-
-      margin: 25px 0 15px 0;  <li><a href="#operators">Operators</a></li>
-
-      padding-left: 10px;
-
-      border-left: 4px solid #667eea;  <li><a href="#control-flow">Control Flow</a></li>## Operators
-
-    }
-
-      <li><a href="#loops">Loops</a></li>
-
-    .toc {
-
-      background: #f7fafc;  <li><a href="#utility-classes">Utility Classes</a></li>### Arithmetic Operators
-
-      border-radius: 8px;
-
-      padding: 25px;</ul>- [arithmeticoperator.kt](arithmeticoperator.kt) - Addition, subtraction, multiplication, division, modulus
-
-      margin: 20px 0 30px 0;
-
-      border: 1px solid #e2e8f0;
-
-    }
-
-    <hr>### Assignment Operators
-
-    .toc ul {
-
-      list-style: none;- [assignmentoperator.kt](assignmentoperator.kt) - Assignment and compound assignment operators
-
-      display: grid;
-
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));<h2 id="getting-started">Getting Started</h2>
-
-      gap: 12px;
-
-    }<h3>Hello World</h3>### Comparison Operators
-
-    
-
-    .toc li {<ul>- [comparisonoperator.kt](comparisonoperator.kt) - Equality, inequality, greater than, less than
-
-      padding: 0;
-
-    }  <li><a href="helloworld.kt">helloworld.kt</a> - Your first Kotlin program</li>
-
-    
-
-    .toc a {  <li><a href="Main.kt">Main.kt</a> - Main entry point with utility import</li>### Logical Operators
-
-      color: #667eea;
-
-      text-decoration: none;  <li><a href="commandlineargs.kt">commandlineargs.kt</a> - Working with command-line arguments</li>- [logicaloperator.kt](logicaloperator.kt) - AND, OR, NOT operations
-
-      display: block;
-
-      padding: 10px 15px;</ul>
-
-      border-radius: 6px;
-
-      background: white;### Range Operations
-
-      border: 1px solid #e2e8f0;
-
-      transition: all 0.3s;<hr>- [rangeoperation.kt](rangeoperation.kt) - Working with ranges in Kotlin
-
-      font-weight: 500;
-
-    }
-
-    
-
-    .toc a:hover {<h2 id="variables-and-data-types">Variables and Data Types</h2>---
-
-      background: #667eea;
-
-      color: white;
-
-      transform: translateX(5px);
-
-      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);<h3>Immutable Variables (val)</h3>## Control Flow
-
-    }
-
-    <ul>
-
-    .file-list {
-
-      list-style: none;  <li><a href="Variabledatatypes.kt">Variabledatatypes.kt</a> - Immutable variable declarations with different data types</li>### If Statements
-
-      margin: 15px 0;
-
-    }  <li><a href="explicitdeclarationex.kt">explicitdeclarationex.kt</a> - Explicit type declaration examples</li>- [simpleif.kt](simpleif.kt) - Basic if statement
-
-    
-
-    .file-list li {</ul>- [ifelsedemo.kt](ifelsedemo.kt) - If-else statements
-
-      margin: 10px 0;
-
-      padding: 12px 15px;- [ifelseladder.kt](ifelseladder.kt) - If-else-if ladder (multiple conditions)
-
-      background: #f7fafc;
-
-      border-radius: 6px;<h3>Mutable Variables (var)</h3>- [ifasanexpression.kt](ifasanexpression.kt) - Using if as an expression
-
-      border-left: 4px solid #667eea;
-
-      transition: all 0.3s;<ul>
-
-    }
-
-      <li><a href="MutableVariabledatetypes.kt">MutableVariabledatetypes.kt</a> - Mutable variable declarations and reassignment</li>### When Expression
-
-    .file-list li:hover {
-
-      background: #edf2f7;</ul>- [whencase.kt](whencase.kt) - When statement (similar to switch)
-
-      transform: translateX(5px);
-
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);- [whenexpression.kt](whenexpression.kt) - When as an expression
-
-    }
-
-    <h3>Constants</h3>
-
-    .file-list a {
-
-      color: #2d3748;<ul>---
-
-      text-decoration: none;
-
-      font-weight: 600;  <li><a href="Constdemo.kt">Constdemo.kt</a> - Working with constants using <code>const</code></li>
-
-      font-family: 'Courier New', monospace;
-
-      font-size: 0.95em;  <li><a href="Constarray.kt">Constarray.kt</a> - Constant arrays</li>## Loops
-
-    }
-
-    </ul>
-
-    .file-list a:hover {
-
-      color: #667eea;### For Loop
-
-    }
-
-    <h3>Nullable Types</h3>- [forloop.kt](forloop.kt) - For loop with ranges and collections
-
-    .file-description {
-
-      color: #718096;<ul>
-
-      font-size: 0.9em;
-
-      margin-left: 8px;  <li><a href="nullabledemo.kt">nullabledemo.kt</a> - Nullable types and null safety</li>### While Loop
-
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-
-    }</ul>- [whileloop.kt](whileloop.kt) - While loop examples
-
-    
-
-    .section {
-
-      margin: 30px 0;
-
-      padding: 25px;<hr>### Do-While Loop
-
-      background: #fafafa;
-
-      border-radius: 8px;- [dowhileloop.kt](dowhileloop.kt) - Do-while loop examples
-
-      border: 1px solid #e2e8f0;
-
-    }<h2 id="operators">Operators</h2>
-
-    
-
-    .method-box {### Loop Control
-
-      background: white;
-
-      padding: 20px;<h3>Arithmetic Operators</h3>- [loopcontrol.kt](loopcontrol.kt) - Break and continue statements
-
-      margin: 15px 0;
-
-      border-radius: 8px;<ul>
-
-      border: 1px solid #e2e8f0;
-
-    }  <li><a href="arithmeticoperator.kt">arithmeticoperator.kt</a> - Addition, subtraction, multiplication, division, modulus</li>---
-
-    
-
-    .method-box h3 {</ul>
-
-      margin-top: 0;
-
-      color: #667eea;## Utility Classes
-
-      border-left: none;
-
-      padding-left: 0;<h3>Assignment Operators</h3>
-
-    }
-
-    <ul>- [Utility.kt](Utility.kt) - Utility functions and helpers
-
-    ol {
-
-      margin-left: 20px;  <li><a href="assignmentoperator.kt">assignmentoperator.kt</a> - Assignment and compound assignment operators</li>- [utility/Utils.kt](utility/Utils.kt) - Additional utility functions
-
-      margin-top: 10px;
-
-    }</ul>
-
-    
-
-    ol li {---
-
-      margin: 8px 0;
-
-      padding-left: 5px;<h3>Comparison Operators</h3>
-
-    }
-
-    <ul>## 🚀 How to Run Examples
-
-    code {
-
-      background: #2d3748;  <li><a href="comparisonoperator.kt">comparisonoperator.kt</a> - Equality, inequality, greater than, less than</li>
-
-      color: #68d391;
-
-      padding: 3px 8px;</ul>### Method 1: Using VS Code Task (Recommended)
-
-      border-radius: 4px;
-
-      font-family: 'Courier New', monospace;1. Open any `.kt` file
-
-      font-size: 0.9em;
-
-    }<h3>Logical Operators</h3>2. Press `Ctrl+Shift+B` (or `Cmd+Shift+B` on Mac)
-
-    
-
-    pre {<ul>3. Select "Run Kotlin File"
-
-      background: #2d3748;
-
-      color: #e2e8f0;  <li><a href="logicaloperator.kt">logicaloperator.kt</a> - AND, OR, NOT operations</li>
-
-      padding: 20px;
-
-      border-radius: 8px;</ul>### Method 2: Using Code Runner
-
-      overflow-x: auto;
-
-      margin: 15px 0;1. Open any `.kt` file
-
-      border: 2px solid #4a5568;
-
-    }<h3>Range Operations</h3>2. Click the ▶️ Run button at the top right
-
-    
-
-    pre code {<ul>
-
-      background: none;
-
-      color: #68d391;  <li><a href="rangeoperation.kt">rangeoperation.kt</a> - Working with ranges in Kotlin</li>### Method 3: Using Terminal
-
-      padding: 0;
-
-    }</ul>```bash
-
-    
-
-    .learning-path {cd ch1
-
-      background: linear-gradient(135deg, #f6f7ff 0%, #f0f4ff 100%);
-
-      padding: 25px;<hr>kotlinc filename.kt -include-runtime -d filename.jar && java -jar filename.jar
-
-      border-radius: 8px;
-
-      border: 2px solid #667eea;```
-
-    }
-
-    <h2 id="control-flow">Control Flow</h2>
-
-    .learning-path ol {
-
-      margin-top: 15px;---
-
-    }
-
-    <h3>If Statements</h3>
-
-    .learning-path li {
-
-      margin: 12px 0;<ul>## 📖 Learning Path
-
-      font-weight: 500;
-
-    }  <li><a href="simpleif.kt">simpleif.kt</a> - Basic if statement</li>
-
-    
-
-    .notes {  <li><a href="ifelsedemo.kt">ifelsedemo.kt</a> - If-else statements</li>**Recommended order for beginners:**
-
-      background: #fffaf0;
-
-      border-left: 5px solid #ed8936;  <li><a href="ifelseladder.kt">ifelseladder.kt</a> - If-else-if ladder (multiple conditions)</li>
-
-      padding: 20px;
-
-      border-radius: 0 8px 8px 0;  <li><a href="ifasanexpression.kt">ifasanexpression.kt</a> - Using if as an expression</li>1. Start with **Getting Started** section
-
-      margin: 20px 0;
-
-    }</ul>2. Learn **Variables and Data Types**
-
-    
-
-    .notes ul {3. Understand **Operators**
-
-      list-style: none;
-
-      margin-top: 10px;<h3>When Expression</h3>4. Practice **Control Flow** statements
-
-    }
-
-    <ul>5. Master **Loops**
-
-    .notes li {
-
-      margin: 10px 0;  <li><a href="whencase.kt">whencase.kt</a> - When statement (similar to switch)</li>6. Explore **Utility Classes**
-
-      padding-left: 25px;
-
-      position: relative;  <li><a href="whenexpression.kt">whenexpression.kt</a> - When as an expression</li>
-
-    }
-
-    </ul>---
-
-    .notes li:before {
-
-      content: "✓";
-
-      position: absolute;
-
-      left: 0;<hr>## 📝 Notes
-
-      color: #ed8936;
-
-      font-weight: bold;
-
-      font-size: 1.2em;
-
-    }<h2 id="loops">Loops</h2>- All examples include `main()` function and can be run independently
-
-    
-
-    footer {- Examples demonstrate best practices for Kotlin programming
-
-      background: #2d3748;
-
-      color: white;<h3>For Loop</h3>- Code includes comments for better understanding
-
-      padding: 20px 30px;
-
-      text-align: center;<ul>
-
-      margin-top: 40px;
-
-    }  <li><a href="forloop.kt">forloop.kt</a> - For loop with ranges and collections</li>---
-
-    
-
-    footer a {</ul>
-
-      color: #68d391;
-
-      text-decoration: none;**Repository:** [Android-Kotlin-Examples](https://github.com/bhavik-bagdai/Android-Kotlin-Examples)  
-
-    }
-
-    <h3>While Loop</h3>**Chapter:** 1 - Kotlin Basics
-
-    footer a:hover {
-
-      text-decoration: underline;<ul>
-
-    }  <li><a href="whileloop.kt">whileloop.kt</a> - While loop examples</li>
-
-    </ul>
-
-    hr {
-
-      border: none;<h3>Do-While Loop</h3>
-
-      border-top: 2px solid #e2e8f0;<ul>
-
-      margin: 40px 0;  <li><a href="dowhileloop.kt">dowhileloop.kt</a> - Do-while loop examples</li>
-
-    }</ul>
-
-    
-
-    @media (max-width: 768px) {<h3>Loop Control</h3>
-
-      h1 {<ul>
-
-        font-size: 2em;  <li><a href="loopcontrol.kt">loopcontrol.kt</a> - Break and continue statements</li>
-
-      }</ul>
-
-      
-
-      .content {<hr>
-
-        padding: 20px 15px;
-
-      }<h2 id="utility-classes">Utility Classes</h2>
-
-      <ul>
-
-      header {  <li><a href="Utility.kt">Utility.kt</a> - Utility functions and helpers</li>
-
-        padding: 30px 20px;  <li><a href="utility/Utils.kt">utility/Utils.kt</a> - Additional utility functions</li>
-
-      }</ul>
-
-      
-
-      .toc ul {<hr>
-
-        grid-template-columns: 1fr;
-
-      }<h2>🚀 How to Run Examples</h2>
-
-    }
-
-  </style><h3>Method 1: Using VS Code Task (Recommended)</h3>
-
-</head><ol>
-
-<body>  <li>Open any <code>.kt</code> file</li>
-
-  <li>Press <code>Ctrl+Shift+B</code> (or <code>Cmd+Shift+B</code> on Mac)</li>
-
-<div class="container">  <li>Select "Run Kotlin File"</li>
-
-  <header></ol>
-
-    <a href="../" class="back-link">← Back to Main Index</a>
-
-    <h1>📘 Chapter 1: Kotlin Basics</h1><h3>Method 2: Using Code Runner</h3>
-
-    <p class="subtitle">Comprehensive collection of Kotlin code examples covering fundamental programming concepts</p><ol>
-
-  </header>  <li>Open any <code>.kt</code> file</li>
-
-  <li>Click the ▶️ Run button at the top right</li>
-
-  <div class="content"></ol>
-
-    
-
-    <h2>📚 Table of Contents</h2><h3>Method 3: Using Terminal</h3>
-
-    <div class="toc"><pre><code>cd ch1
-
-      <ul>kotlinc filename.kt -include-runtime -d filename.jar && java -jar filename.jar</code></pre>
-
-        <li><a href="#getting-started">🚀 Getting Started</a></li>
-
-        <li><a href="#variables-and-data-types">📦 Variables & Data Types</a></li><hr>
-
-        <li><a href="#operators">⚙️ Operators</a></li>
-
-        <li><a href="#control-flow">🔀 Control Flow</a></li><h2>📖 Learning Path</h2>
-
-        <li><a href="#loops">🔄 Loops</a></li><p><strong>Recommended order for beginners:</strong></p>
-
-        <li><a href="#utility-classes">🛠️ Utility Classes</a></li><ol>
-
-      </ul>  <li>Start with <strong>Getting Started</strong> section</li>
-
-    </div>  <li>Learn <strong>Variables and Data Types</strong></li>
-
-  <li>Understand <strong>Operators</strong></li>
-
-    <hr>  <li>Practice <strong>Control Flow</strong> statements</li>
-
-  <li>Master <strong>Loops</strong></li>
-
-    <h2 id="getting-started">🚀 Getting Started</h2>  <li>Explore <strong>Utility Classes</strong></li>
-
-    </ol>
-
-    <h3>Hello World</h3>
-
-    <ul class="file-list"><hr>
-
-      <li><a href="helloworld.kt">helloworld.kt</a> <span class="file-description">- Your first Kotlin program</span></li>
-
-      <li><a href="Main.kt">Main.kt</a> <span class="file-description">- Main entry point with utility import</span></li><h2>📝 Notes</h2>
-
-      <li><a href="commandlineargs.kt">commandlineargs.kt</a> <span class="file-description">- Working with command-line arguments</span></li><ul>
-
-    </ul>  <li>All examples include <code>main()</code> function and can be run independently</li>
-
-  <li>Examples demonstrate best practices for Kotlin programming</li>
-
-    <hr>  <li>Code includes comments for better understanding</li>
-
+<html>
+<head>
+  <title>Chapter 1 – Kotlin Basics</title>
+</head>
+<body>
+
+<p><a href="../">← Back to Main Index</a></p>
+
+<h1>📘 Chapter 1 – Kotlin Basics</h1>
+<p>All fundamental Kotlin programming concepts with runnable code examples.</p>
+
+<h2>🚀 Getting Started</h2>
+<ul>
+  <li><a href="helloworld.kt">helloworld.kt</a> – Your first Kotlin program</li>
+  <li><a href="Main.kt">Main.kt</a> – Main entry point with utility import</li>
+  <li><a href="commandlineargs.kt">commandlineargs.kt</a> – Working with command-line arguments</li>
 </ul>
 
-    <h2 id="variables-and-data-types">📦 Variables and Data Types</h2>
+<h2>📦 Variables and Data Types</h2>
 
-<hr>
+<h3>Immutable Variables (val)</h3>
+<ul>
+  <li><a href="Variabledatatypes.kt">Variabledatatypes.kt</a> – Immutable variable declarations</li>
+  <li><a href="explicitdeclarationex.kt">explicitdeclarationex.kt</a> – Explicit type declaration</li>
+</ul>
 
-    <h3>Immutable Variables (val)</h3>
+<h3>Mutable Variables (var)</h3>
+<ul>
+  <li><a href="MutableVariabledatetypes.kt">MutableVariabledatetypes.kt</a> – Mutable variables and reassignment</li>
+</ul>
 
-    <ul class="file-list"><p>
+<h3>Constants</h3>
+<ul>
+  <li><a href="Constdemo.kt">Constdemo.kt</a> – Working with <code>const</code></li>
+  <li><a href="Constarray.kt">Constarray.kt</a> – Constant arrays</li>
+</ul>
 
-      <li><a href="Variabledatatypes.kt">Variabledatatypes.kt</a> <span class="file-description">- Immutable variable declarations with different data types</span></li><strong>Repository:</strong> <a href="https://github.com/bhavik-bagdai/Android-Kotlin-Examples">Android-Kotlin-Examples</a><br>
+<h3>Nullable Types</h3>
+<ul>
+  <li><a href="nullabledemo.kt">nullabledemo.kt</a> – Nullable types and null safety</li>
+</ul>
 
-      <li><a href="explicitdeclarationex.kt">explicitdeclarationex.kt</a> <span class="file-description">- Explicit type declaration examples</span></li><strong>Chapter:</strong> 1 - Kotlin Basics
+<h2>⚙️ Operators</h2>
+<ul>
+  <li><a href="arithmeticoperator.kt">arithmeticoperator.kt</a> – Addition, subtraction, multiplication, division, modulus</li>
+  <li><a href="assignmentoperator.kt">assignmentoperator.kt</a> – Assignment and compound assignment operators</li>
+  <li><a href="comparisonoperator.kt">comparisonoperator.kt</a> – Equality, inequality, comparisons</li>
+  <li><a href="logicaloperator.kt">logicaloperator.kt</a> – AND, OR, NOT operations</li>
+  <li><a href="rangeoperation.kt">rangeoperation.kt</a> – Working with ranges</li>
+</ul>
 
-    </ul></p>
+<h2>🔀 Control Flow</h2>
 
+<h3>If Statements</h3>
+<ul>
+  <li><a href="simpleif.kt">simpleif.kt</a> – Basic if statement</li>
+  <li><a href="ifelsedemo.kt">ifelsedemo.kt</a> – If-else statements</li>
+  <li><a href="ifelseladder.kt">ifelseladder.kt</a> – If-else-if ladder</li>
+  <li><a href="ifasanexpression.kt">ifasanexpression.kt</a> – Using if as an expression</li>
+</ul>
 
+<h3>When Expression</h3>
+<ul>
+  <li><a href="whencase.kt">whencase.kt</a> – When statement (like switch)</li>
+  <li><a href="whenexpression.kt">whenexpression.kt</a> – When as an expression</li>
+</ul>
 
-    <h3>Mutable Variables (var)</h3></body>
+<h2>🔄 Loops</h2>
+<ul>
+  <li><a href="forloop.kt">forloop.kt</a> – For loop with ranges and collections</li>
+  <li><a href="whileloop.kt">whileloop.kt</a> – While loop examples</li>
+  <li><a href="dowhileloop.kt">dowhileloop.kt</a> – Do-while loop examples</li>
+  <li><a href="loopcontrol.kt">loopcontrol.kt</a> – Break and continue statements</li>
+</ul>
 
-    <ul class="file-list"></html>
+<h2>🛠️ Utility Classes</h2>
+<ul>
+  <li><a href="Utility.kt">Utility.kt</a> – Utility functions and helpers</li>
+  <li><a href="utility/Utils.kt">utility/Utils.kt</a> – Additional utility functions</li>
+</ul>
 
-      <li><a href="MutableVariabledatetypes.kt">MutableVariabledatetypes.kt</a> <span class="file-description">- Mutable variable declarations and reassignment</span></li>
-    </ul>
+<h2>🚀 How to Run</h2>
+<p><b>Method 1: VS Code Task (Recommended)</b></p>
+<ol>
+  <li>Open any <code>.kt</code> file</li>
+  <li>Press <code>Ctrl+Shift+B</code> (or <code>Cmd+Shift+B</code> on Mac)</li>
+  <li>Select "Run Kotlin File"</li>
+</ol>
 
-    <h3>Constants</h3>
-    <ul class="file-list">
-      <li><a href="Constdemo.kt">Constdemo.kt</a> <span class="file-description">- Working with constants using <code>const</code></span></li>
-      <li><a href="Constarray.kt">Constarray.kt</a> <span class="file-description">- Constant arrays</span></li>
-    </ul>
+<p><b>Method 2: Using Terminal</b></p>
+<pre>cd ch1
+kotlinc filename.kt -include-runtime -d filename.jar && java -jar filename.jar</pre>
 
-    <h3>Nullable Types</h3>
-    <ul class="file-list">
-      <li><a href="nullabledemo.kt">nullabledemo.kt</a> <span class="file-description">- Nullable types and null safety</span></li>
-    </ul>
+<h2>📖 Learning Path</h2>
+<p><b>Recommended order for beginners:</b></p>
+<ol>
+  <li>Getting Started</li>
+  <li>Variables and Data Types</li>
+  <li>Operators</li>
+  <li>Control Flow</li>
+  <li>Loops</li>
+  <li>Utility Classes</li>
+</ol>
 
-    <hr>
-
-    <h2 id="operators">⚙️ Operators</h2>
-
-    <h3>Arithmetic Operators</h3>
-    <ul class="file-list">
-      <li><a href="arithmeticoperator.kt">arithmeticoperator.kt</a> <span class="file-description">- Addition, subtraction, multiplication, division, modulus</span></li>
-    </ul>
-
-    <h3>Assignment Operators</h3>
-    <ul class="file-list">
-      <li><a href="assignmentoperator.kt">assignmentoperator.kt</a> <span class="file-description">- Assignment and compound assignment operators</span></li>
-    </ul>
-
-    <h3>Comparison Operators</h3>
-    <ul class="file-list">
-      <li><a href="comparisonoperator.kt">comparisonoperator.kt</a> <span class="file-description">- Equality, inequality, greater than, less than</span></li>
-    </ul>
-
-    <h3>Logical Operators</h3>
-    <ul class="file-list">
-      <li><a href="logicaloperator.kt">logicaloperator.kt</a> <span class="file-description">- AND, OR, NOT operations</span></li>
-    </ul>
-
-    <h3>Range Operations</h3>
-    <ul class="file-list">
-      <li><a href="rangeoperation.kt">rangeoperation.kt</a> <span class="file-description">- Working with ranges in Kotlin</span></li>
-    </ul>
-
-    <hr>
-
-    <h2 id="control-flow">🔀 Control Flow</h2>
-
-    <h3>If Statements</h3>
-    <ul class="file-list">
-      <li><a href="simpleif.kt">simpleif.kt</a> <span class="file-description">- Basic if statement</span></li>
-      <li><a href="ifelsedemo.kt">ifelsedemo.kt</a> <span class="file-description">- If-else statements</span></li>
-      <li><a href="ifelseladder.kt">ifelseladder.kt</a> <span class="file-description">- If-else-if ladder (multiple conditions)</span></li>
-      <li><a href="ifasanexpression.kt">ifasanexpression.kt</a> <span class="file-description">- Using if as an expression</span></li>
-    </ul>
-
-    <h3>When Expression</h3>
-    <ul class="file-list">
-      <li><a href="whencase.kt">whencase.kt</a> <span class="file-description">- When statement (similar to switch)</span></li>
-      <li><a href="whenexpression.kt">whenexpression.kt</a> <span class="file-description">- When as an expression</span></li>
-    </ul>
-
-    <hr>
-
-    <h2 id="loops">🔄 Loops</h2>
-
-    <h3>For Loop</h3>
-    <ul class="file-list">
-      <li><a href="forloop.kt">forloop.kt</a> <span class="file-description">- For loop with ranges and collections</span></li>
-    </ul>
-
-    <h3>While Loop</h3>
-    <ul class="file-list">
-      <li><a href="whileloop.kt">whileloop.kt</a> <span class="file-description">- While loop examples</span></li>
-    </ul>
-
-    <h3>Do-While Loop</h3>
-    <ul class="file-list">
-      <li><a href="dowhileloop.kt">dowhileloop.kt</a> <span class="file-description">- Do-while loop examples</span></li>
-    </ul>
-
-    <h3>Loop Control</h3>
-    <ul class="file-list">
-      <li><a href="loopcontrol.kt">loopcontrol.kt</a> <span class="file-description">- Break and continue statements</span></li>
-    </ul>
-
-    <hr>
-
-    <h2 id="utility-classes">🛠️ Utility Classes</h2>
-    <ul class="file-list">
-      <li><a href="Utility.kt">Utility.kt</a> <span class="file-description">- Utility functions and helpers</span></li>
-      <li><a href="utility/Utils.kt">utility/Utils.kt</a> <span class="file-description">- Additional utility functions</span></li>
-    </ul>
-
-    <hr>
-
-    <h2>🚀 How to Run Examples</h2>
-    
-    <div class="method-box">
-      <h3>Method 1: Using VS Code Task (Recommended)</h3>
-      <ol>
-        <li>Open any <code>.kt</code> file</li>
-        <li>Press <code>Ctrl+Shift+B</code> (or <code>Cmd+Shift+B</code> on Mac)</li>
-        <li>Select "Run Kotlin File"</li>
-      </ol>
-    </div>
-
-    <div class="method-box">
-      <h3>Method 2: Using Code Runner</h3>
-      <ol>
-        <li>Open any <code>.kt</code> file</li>
-        <li>Click the ▶️ Run button at the top right</li>
-      </ol>
-    </div>
-
-    <div class="method-box">
-      <h3>Method 3: Using Terminal</h3>
-      <pre><code>cd ch1
-kotlinc filename.kt -include-runtime -d filename.jar && java -jar filename.jar</code></pre>
-    </div>
-
-    <hr>
-
-    <h2>📖 Learning Path</h2>
-    <div class="learning-path">
-      <p><strong>Recommended order for beginners:</strong></p>
-      <ol>
-        <li>Start with <strong>Getting Started</strong> section</li>
-        <li>Learn <strong>Variables and Data Types</strong></li>
-        <li>Understand <strong>Operators</strong></li>
-        <li>Practice <strong>Control Flow</strong> statements</li>
-        <li>Master <strong>Loops</strong></li>
-        <li>Explore <strong>Utility Classes</strong></li>
-      </ol>
-    </div>
-
-    <div class="notes">
-      <h2>📝 Notes</h2>
-      <ul>
-        <li>All examples include <code>main()</code> function and can be run independently</li>
-        <li>Examples demonstrate best practices for Kotlin programming</li>
-        <li>Code includes comments for better understanding</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <footer>
-    <p><strong>Repository:</strong> <a href="https://github.com/bhavik-bagdai/Android-Kotlin-Examples">Android-Kotlin-Examples</a></p>
-    <p><strong>Chapter:</strong> 1 - Kotlin Basics</p>
-  </footer>
-</div>
+<p>📥 <b>Download full source:</b>
+<a href="https://github.com/bhavik-bagdai/Android-Kotlin-Examples">
+GitHub Repository
+</a>
+</p>
 
 </body>
 </html>
